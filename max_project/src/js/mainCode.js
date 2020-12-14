@@ -157,6 +157,8 @@ function showReward() {
   if(score==13){unlockImages6.style.display="inline-block"; ringPoint.play();}
   if(score==15){
     unlockReward.style.display='Block';
+    document.querySelector("h2").innerHTML =
+      "You won!! Click on the lock to see my CV";
     gameWinSound.play(); // game winning sound after getting 15
   }
 }
