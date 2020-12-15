@@ -1,23 +1,46 @@
 h1{
   text-align: center;}
-
-h2{font-weight: bold;
+  
+  h2{font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   color: orange;
 }
+#voircvimg {
+  display: block;
+  transform: rotateZ(-90deg);
+  top: -90px;
+  left: 65px;
+  height: 240px;
+  position: absolute;
+  z-index: -1;
+}
 
-
-#container-canvas {
-
+ul li a {
+  background-color: unset !important;
+  color: white !important;
+  font-weight: bold;
+  font-size: 16px;
+}
+#winscreen {
+  position: absolute;
+  top:0;
+  margin-left:14%;
+  width: 810px;
+  height: 505px;
+  background-color: #3ff16b96;
   padding: 0;
-  
+  margin: auto;
+  margin-top: 80px;
+  display: none;
+}
+#container-canvas {
+  padding: 0;
   margin: auto;
   margin-top: 80px;
   display: block;
   width: 800px;
   height: 600px;
-  
-  top: 0;
+    top: 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -101,10 +124,3 @@ a.button1:hover{
 
 }
 #unlockCv{display:none;}
-#download{
-  
- 
-  
-  
-
-}
