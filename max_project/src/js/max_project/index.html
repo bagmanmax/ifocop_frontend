@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jeu CV</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Font Awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/2d60919e50.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:400,300,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+
+    <link rel="stylesheet" href="src/css/index.css" />
+  </head>
+
+  <body>
+    <div id="container-canvas">
+      <canvas
+        id="myCanvas"
+        width="800"
+        height="600"
+        style="border: 2px solid rgba(236, 146, 2, 0.842)"
+      ></canvas>
+      <div id="winscreen"></div>
+
+      <div class="flex-container">
+        <div class="flex-child">
+          <a href="#" class="round-button" id="pause-btn"
+            ><i class="fa fa-play fa-2x"></i
+          ></a>
+        </div>
+
+        <div class="flex-child">
+          <a href="index.html" class="button1"
+            ><i class="fas fa-redo-alt fa-4x" class="round-button"></i
+          ></a>
+        </div>
+        <div class="flex-child" id="unlockCv">
+          <a href="cv.html" class="button1" target="_blank"
+            ><i class="fas fa-unlock-alt fa-4x"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Maxime Leba</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active">
+                <a href="cv.html" target="_blank">
+                  Voir mon CV sans jouer
+                  <img
+                    id="voircvimg"
+                    src="./public/images/botPipe.png"
+                    width="150"
+                    height="25"
+                    alt="pipe"
+                /></a>
+              </li>
+
+              <li>
+                <a data-toggle="modal" data-target="#myModal" href="#myModal"
+                  ><i class="fa fa-envelope-o"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+      <!--disappearing icons -->
+      <div id="blue">
+        <div class="container">
+          <div class="row centered">
+            <div class="col-lg-5 col-lg-offset-2">
+              <h2></h2>
+              <h4>Volons au delà</h4>
+
+              <p>
+                Appuyez sur la touche Z pour voler, évitez les tuyaux et vous gagnerez une récompense à la fin! Attention, pour tout découvrir il faudra obtenir un score minimum de 30! 
+
+
+              </p>
+              <div class="d-flex">
+                <img
+                  src="public/miscs/logos/html.png"
+                  id="locked_images1"
+                  alt=""
+                  title="La base des bases"
+                />
+                <img
+                  src="public/miscs/logos/css.png"
+                  id="locked_images2"
+                  alt=""
+                  title="ça commence à se coarser ça ne fait jamais ce qu'on veut hein!"
+                />
+                <img
+                  src="public/miscs/logos/js.png"
+                  id="locked_images3"
+                  alt=""
+                  title="Javascript en plus simple perso je préfère du js pur :)"
+                />
+
+                <img
+                  src="public/images/apple-touch-icon.png"
+                  alt="bootstrap"
+                  id="locked_images4"
+                  title="On aime ou on deteste peu importe ça dépanne bien!"
+                />
+                <img
+                  src="public/miscs/logos/mongodb-logo.png"
+                  class="locked_images3"
+                  alt=""
+                  title="Un bon debut de backend et vraiment interessant cette histoire de database!"
+                  id="locked_images5"
+                />
+                <img
+                  src="public/miscs/logos/nodejs-logo.png"
+                  class="locked_images3"
+                  alt=""
+                  id="locked_images6"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+      </div>
+
+      <div class="container w">
+        <div class="row centered">
+          <br /><br />
+          <div class="col-sm-3">
+            <i class="fa fa-desktop fa-2x colorIcon"></i>
+            <h4>A propos de moi</h4>
+            <p>
+              Grand passionné de technologies, j’ai passé 10 années formidables
+              chez Apple en tant que technicien où j’ai appris à travailler au
+              sein d’une grande équipe. Cela faisait un bon moment que je
+              songeais à changer de métier et cette année, au vu de la situation
+              particulière que nous connaissons, j’ai décidé qu’il était temps
+              que je réalise l’un de mes rêves : devenir developpeur en
+              intégrant le programme de développement web Javascript du centre
+              de formation IFOCOP.
+            </p>
+          </div>
+          <!-- col-lg-4 -->
+
+          <div class="col-sm-3">
+            <i class="fa fa-cogs fa-2x colorIcon"></i>
+            <h4>Ce que j'apprends</h4>
+            <p>
+              En faisant ma formation full stack javascript j'ai pu me former à
+              plusieurs langages importants dans le monde du développement web
+              que ce soit dans le front ou le back-end. Les bases du javascript
+              sont une force dans cette formation car elles facilitent
+              l’apprentissage d'autres langages. Avec des bases solides, on
+              dispose d’une meilleure adaptabilité pour le monde de
+              l’entreprise.
+            </p>
+          </div>
+          <!-- col-lg-4 -->
+
+          <div class="col-sm-3">
+            <i class="fas fa-rocket fa-2x colorIcon"></i>
+            <h4>Ce que je peux apporter</h4>
+            <p>
+              J'ai un bon esprit d'équipe et je suis quelqu'un qui saura
+              s'adapter à vos besoins. Je suis bilingue en anglais ce qui pourra
+              faciliter les échanges à l’international. J'adore jouer au
+              babyfoot, je pourrai donc aisément m'intégrer à n'importe qu'elle
+              équipe. Rencontrons-nous! Je pourrai peut-être vous aider à
+              réaliser vos projets.
+
+              <i class="far fa-smile-wink colorIcon"></i>. Rencontrons nous!
+              Peut-être je pourrais vous aider à réaliser vos projets.
+            </p>
+          </div>
+          <!-- col-lg-4 -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+
+    <!-- MODAL FOR CONTACT -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Contactez moi</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row text-center">
+              <h4>0627495457</h4>
+              <h4>max.leba@gmail.com</h4>
+              <a href=""
+                ><i
+                  class="fab fa-instagram fa-3x"
+                  style="color: rgba(236, 146, 2, 0.842)"
+                ></i
+              ></a>
+              <br />
+              <a href="https://www.linkedin.com/in/max-leba/" target="_blank"
+                ><i
+                  class="fab fa-linkedin fa-3x"
+                  style="color: rgba(236, 146, 2, 0.842)"
+                ></i
+                ><br
+              /></a>
+              <a href="https://www.facebook.com/max.leba.3/" target="_blank"
+                ><i
+                  class="fab fa-facebook-square fa-3x"
+                  style="color: rgba(236, 146, 2, 0.842)"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/php-mail-form/validate.js"></script>
+    <script src="lib/chart/chart.js"></script>
+
+    <!-- Template Main Javascript File -->
+
+    <script src="src/js/collisionPipes.js"></script>
+    <script src="src/js/playerBird.js"></script>
+    <script src="src/js/mainCode.js"></script>
+  </body>
+</html>
