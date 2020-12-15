@@ -227,7 +227,7 @@ function showReward() {
   if (score == 30) {
     newPlayer.won = true;
     pipeSpawn = 45;
-    window.document.getElementById("winscreen").style.display = "unset";
+    window.document.getElementById("winscreen").style.display = "block";
     unlockReward.style.display = "Block";
     gameWinSound.play(); // game winning sound after getting 15
     document.querySelector("h2").innerHTML =
