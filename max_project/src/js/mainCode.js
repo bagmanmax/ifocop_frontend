@@ -182,7 +182,7 @@ function gameOver() {
       "Perdu ! Votre score est " + score,
       canvas.width / 2,
       canvas.height / 2 + 110
-    );
+    );bgMusic.muted=true;
   }
 }
 
