@@ -52,7 +52,7 @@ document.getElementById("pause-btn").addEventListener("click", function () {
   /*function to pause the game*/ //console.log("test");
   pauseB = !pauseB; // toggle boolean
   console.log(pauseB);
-  if (!pauseB) {
+  if (!pauseB && newPlayer.birdIsAlive ===true) {
     animate(); // we use the animate function to return to the game once the boolean is false
   }
 });
@@ -182,7 +182,7 @@ function gameOver() {
       "Perdu ! Votre score est " + score,
       canvas.width / 2,
       canvas.height / 2 + 110
-    );bgMusic.muted=true;
+    );bgMusic.muted=true;flyAudio.muted= true;
   }
 }
 
