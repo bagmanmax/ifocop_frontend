@@ -44,7 +44,7 @@ let gameTrigger = false; // space button to move the player bird
 let birdHeight = 0; //height of the bird in the canvas
 let score = 0; // score after each pipe
 let frame = 0;
-let gameSpeed = 2.5; // speed of the scrolling from the left
+let gameSpeed = 3; // speed of the scrolling from the left
 //let startingPosition = (canvas.height-90);
 
 // Element needed to get pause screen
