@@ -224,7 +224,7 @@ function showReward() {
     unlockImages6.style.display = "inline-block";
     ringPoint.play();
   }
-  if (score == 30) {
+  if (score == 15) {
     newPlayer.won = true;
     pipeSpawn = 45;
     window.document.getElementById("winscreen").style.display = "block";
